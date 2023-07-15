@@ -1,0 +1,81 @@
+.robot {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    animation: dance 2s infinite;
+    transform-origin: bottom center;
+  }
+  
+  .head {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #e6d9d9;
+    border-radius: 50%;
+  }
+  
+  .body {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 160px;
+    background-color: #e6d9d9;
+  }
+  
+  .left-arm,
+  .right-arm {
+    position: absolute;
+    top: 120px;
+    width: 40px;
+    height: 120px;
+    background-color: #e6d9d9;
+  }
+  
+  .left-arm {
+    left: 0;
+  }
+  
+  .right-arm {
+    right: 0;
+  }
+  
+  .left-leg,
+  .right-leg {
+    position: absolute;
+    top: 240px;
+    width: 40px;
+    height: 120px;
+    background-color: #e6d9d9;
+  }
+  
+  .left-leg {
+    left: 40px;
+  }
+  
+  .right-leg {
+    right: 40px;
+  }
+  
+  @keyframes dance {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }  
